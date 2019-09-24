@@ -612,6 +612,7 @@ window.init = function () {
 }
 
 window.onload = function () {
+    console.log("初始化");
     (dapi.isReady()) ? onReadyCallback() : dapi.addEventListener("ready", onReadyCallback);
     //Here you can put other code that not related to dapi logic
 };
